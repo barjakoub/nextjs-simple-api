@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import database from '../mysql'
 
 export async function GET() {
-    const query = 'SELECT * FROM era1.jobs';
+    const query = 'SELECT * FROM era2.candidates';
     const dataRecords = await database(query);
     return NextResponse.json({
         dataRecords
